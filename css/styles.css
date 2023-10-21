@@ -1,0 +1,29 @@
+* {
+    border: 1px solid red;
+}
+body {
+    display:flex;
+    margin: 0%;
+}
+
+.side-image {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: auto;
+    width: 40vw;
+    height: 100vh;
+}
+.main-container {
+    flex: auto;
+    width: 60vw;
+    height: 100vh;
+}
+
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width:inherit;
+    text-align: center;
+}
