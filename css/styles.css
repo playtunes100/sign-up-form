@@ -12,7 +12,23 @@ body {
     flex: auto;
     width: 40vw;
     height: 100vh;
+    
 }
+.side-image > div {
+    width: inherit;
+    height: inherit;
+    color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.side-image > div > h1 {
+    
+    text-shadow: #fa1111 1px 0 10px;
+}
+
 .main-container {
     background-color: #f8f8f8;
     flex: auto;
