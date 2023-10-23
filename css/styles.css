@@ -55,7 +55,13 @@ fieldset > div {
 
 fieldset > div > input {
     border-radius: 3px;
-    border: 1px solid rgba(128, 128, 128, 0.281) ;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+    
+}
+fieldset > div > input:focus{
+    outline: none;
+    border-bottom: 1px solid rgba(248, 1, 1, 0.555);
 }
 
 fieldset > div > label {
@@ -74,6 +80,9 @@ fieldset > div > label {
     width: 10rem;
     padding: 8px;
 
+}
+.button-container > button:hover {
+    background-color: grey;
 }
 
 a:link, a:visited {
