@@ -12,11 +12,53 @@
     </div>
     <div class="main-container">
         <main>
+            <div class="info">
+                <p>This is not a real online service! 
+                    You know you need something like this in your life to help you realize your deepest dreams. 
+                    Sign up <i>now</i> to get started</p>
+                <p>You <i>know</i> you want to.</p>
+                
+            </div>
+            <form id="register-form" method="post" action="https://httpbin.org/post" >
+                <h3>Let's do this!</h3>
+                <fieldset>
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Thor" name="first-name" required/>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Odinson" name="last-name" required/>
+                    </div> 
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="email" >Email</label>
+                        <input type="email" id="email" placeholder="example@email.com" name="email"/>
+                    </div>
+                    <div>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" placeholder="0123456789" name="phone-number" pattern="[0-9]{10}" required/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="8" required/>
+                    </div>
+                    <div>
+                        <label for="password2" >Confirm Password</label>
+                        <input type="password" id="password2" name="password2" required/>
+                    </div> 
+                </fieldset>
+            </form>
+            <div class="button-container">
+                <button form="register-form" type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
 
         </main>
-        <footer>
-            <p>Copyright © <a href="https://github.com/playtunes100">Playtunes</a> 2023</p>
-        </footer>
+        
     </div>
     
 </body>
